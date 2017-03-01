@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Panchangam</title>
+    </head>
+    <body onload="initFields(); calculate();" >
+        <div class="apppredict">
+            <img src="img/logo.png" width="10%;">    <h1>ASTROBASIC</h1>
+            <h3>-version 1.0</h3>
+            <h1 >Jothidanilayam.com</h1>
+            <h3 style="font-size:25px; background:#F60;">பஞ்சாங்கம்</h3>
+            <div>
+            <DIV align=center id=vvv>
+<font color="#FF0000" face="Arial"><b>loading..</b></font></DIV>
+<div><p>மற்ற நாட்களின் பஞ்சாங்கத்தை அறிய கீழே உள்ள பட்டனை கிளிக் செய்யவும்</p></div>					
+
+        <table style="display:none;">       <form   name=Form1 id="panch"> 
+<tr><td><span>தேதி</span></td><td colspan="2"><select name="Day" size="1" >
+
+                          <option value="1" selected="">1</option>
+
+                          <option value="2">2</option>
+
+                          <option value="3">3</option>
+
+                          <option value="4">4</option>
+
+                          <option value="5">5</option>
+
+                          <option value="6">6</option>
+
+                          <option value="7">7</option>
+
+                          <option value="8">8</option>
+
+                          <option value="9">9</option>
+
+                          <option value="10">10</option>
+
+                          <option value="11">11</option>
+
+                          <option value="12">12</option>
+
+                          <option value="13">13</option>
+
+                          <option value="14">14</option>
+
+                          <option value="15">15</option>
+
+                          <option value="16">16</option>
+
+                          <option value="17">17</option>
+
+                          <option value="18">18</option>
+
+                          <option value="19">19</option>
+
+                          <option value="20">20</option>
+
+                          <option value="21">21</option>
+
+                          <option value="22">22</option>
+
+                          <option value="23">23</option>
+
+                          <option value="24">24</option>
+
+                          <option value="25">25</option>
+
+                          <option value="26">26</option>
+
+                          <option value="27">27</option>
+
+                          <option value="28">28</option>
+
+                          <option value="29">29</option>
+
+
+                          <option value="30">30</option>
+
+                          <option value="31">31</option>
+
+                        </select></td></tr>
+                        <tr><td><span>மாதம்</span></td><td colspan="2">
+                        <select name="Month" size="1"> 
+                        <option selected="" value="0">January</option> 
+
+                          <option value="1">February</option> <option value="2">March</option> <option value="3">April</option> 
+
+                          <option value="4">May</option> <option value="5">June</option> <option value="6">July</option> 
+
+                          <option value="7">August</option> <option value="8">September</option> <option value="9">October</option> <option value="10">November</option> <option value="11">December</option></select></td></tr>
+ <tr><td><span>ஆண்டு</span></td><td  colspan="2"><input name="Year" size="1">
+</td></tr>
+<tr><td colspan="3" style="background:#6F6;"><span>நேரம்</span></td></tr>
+<tr><td><span>மணி</span></td><td colspan="2"><select name="Hours" size=1>  <option value="1" selected="">1</option>
+
+                          <option value="2">2</option>
+
+                          <option value="3">3</option>
+
+                          <option value="4">4</option>
+
+                          <option value="5">5</option>
+
+                          <option value="6">6</option>
+
+                          <option value="7">7</option>
+
+                          <option value="8">8</option>
+
+                          <option value="9">9</option>
+
+                          <option value="10">10</option>
+
+                          <option value="11">11</option>
+
+                          <option value="12">12</option>
+
+                          <option value="13">13</option>
+
+                          <option value="14">14</option>
+
+                          <option value="15">15</option>
+
+                          <option value="16">16</option>
+
+                          <option value="17">17</option>
+
+                          <option value="18">18</option>
+
+                          <option value="19">19</option>
+
+                          <option value="20">20</option>
+
+                          <option value="21">21</option>
+
+                          <option value="22">22</option>
+
+                          <option value="23">23</option>
+
+                          <option value="24">24</option></select></td></tr>
+<tr><td><span>நிமிடங்கள்</span></td><td colspan="2"><select  name="Minutes" value=0 size=1>  <option value="1" selected="">1</option>
+
+                          <option value="2">2</option>
+
+                          <option value="3">3</option>
+
+                          <option value="4">4</option>
+
+                          <option value="5">5</option>
+
+                          <option value="6">6</option>
+
+                          <option value="7">7</option>
+
+                          <option value="8">8</option>
+
+                          <option value="9">9</option>
+
+                          <option value="10">10</option>
+
+                          <option value="11">11</option>
+
+                          <option value="12">12</option>
+
+                          <option value="13">13</option>
+
+                          <option value="14">14</option>
+
+                          <option value="15">15</option>
+
+                          <option value="16">16</option>
+
+                          <option value="17">17</option>
+
+                          <option value="18">18</option>
+
+                          <option value="19">19</option>
+
+                          <option value="20">20</option>
+
+                          <option value="21">21</option>
+
+                          <option value="22">22</option>
+
+                          <option value="23">23</option>
+
+                          <option value="24">24</option>
+                           <option value="25" >25</option>
+
+                          <option value="26">26</option>
+
+                          <option value="27">27</option>
+
+                          <option value="28">28</option>
+
+                          <option value="29">29</option>
+
+                          <option value="30">30</option>
+
+                          <option value="31">31</option>
+
+                         <option value="32">32</option>
+
+                          <option value="33">33</option>
+
+                          <option value="34">34</option>
+
+                          <option value="35">35</option>
+
+                          <option value="36">36</option>
+
+                          <option value="37">37</option>
+
+                          <option value="38">38</option>
+
+                          <option value="39">39</option>
+
+                          <option value="40">40</option>
+
+                          <option value="41">41</option>
+
+                          <option value="42">42</option>
+
+                          <option value="43">43</option>
+
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+
+                          <option value="46">46</option>
+
+                          <option value="47">47</option>
+
+                          <option value="48">48</option>
+
+                          <option value="49">49</option>
+
+                          <option value="50">50</option>
+
+                          <option value="51">51</option>
+
+                          <option value="52">52</option>
+
+                          <option value="53">53</option>
+
+                          <option value="54">54</option>    
+                           <option value="55">55</option>
+
+                          <option value="56">56</option>
+
+                          <option value="57">57</option>
+
+                          <option value="58">58</option>
+
+                          <option value="59">59</option>
+
+                          <option value="60">60</option>
+
+                                                </select></td></tr>
+<tr><td><span>நேர மண்டலம்:</span></td><td><INPUT   id=fld maxLength=2 name=ZoneHour size=2 value=5></td><td><INPUT  id=fld maxLength=2 name=ZoneMin size=2 value=30></td></tr>
+</FORM><table>	
+
+<tr><td colspan="3"><a href="panchangam.html"><button  name=Calculate onclick="calculate()"  value="Show Panchangam" > காட்டு </button></p></a></td></tr>
+            
+            
+                        </div>
+                                         </div>
+                    <script type="text/javascript" src="js/tcmenu1.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
